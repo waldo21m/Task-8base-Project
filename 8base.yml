@@ -1,0 +1,7 @@
+functions:
+  taskIsCompleted:
+    type: webhook
+    handler:
+      code: src/webhooks/taskIsCompleted/handler.js
+    path: /tasks/{taskId}
+    method: PUT
